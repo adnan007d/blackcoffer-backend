@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "module": "NodeNext",
-    "target": "es2023",
-    "moduleResolution": "Bundler",
+    "target": "esnext",
+    "moduleResolution": "NodeNext",
     "outDir": "./dist",
     "allowJs": true,
     "checkJs": true,

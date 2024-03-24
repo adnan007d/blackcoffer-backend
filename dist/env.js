@@ -10,6 +10,6 @@ const envSchema = zod_1.z.object({
 });
 const parsedEnv = envSchema.safeParse(process.env);
 if (!parsedEnv.success) {
-    throw new Error(parsedEnv.error.errors.join("\n"));
+    throw new Error(parsedEnv.error.message);
 }
 exports.env = parsedEnv.data;
